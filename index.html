@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+    <div class="search-container">
+        <input type="text" id="movieName" placeholder="Enter the movie name">
+        <button class="btn" onclick="fetchMovieDetails()">Search Movie</button>
+    </div>
+</section>
+
+<section>
+    <div class="intro" id="intro">
+        <img src="" alt="">
+        <h1>Want the complete <br> <span class="highlight">details of movie ?</span></h1>
+        <p>Search for the movie name and get complete details including directors, actor, IMDB ratings, Votes, Earnings and more interesting facts.</p>
+    </div>
+</section>
+<div  id="loader"></div>
+
+<section>
+    <div class="movie-container none"  id="movieContainer">
+        <div class="content">
+            <h2 id="MovieName">RRR</h2>
+            <p id="plot">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eveniet unde numquam. sit.</p>
+            <p><strong>Actor Name:</strong><span id="actor"> </span></p>
+            <p><strong>Awards:</strong> <span id="awards"> </span></p>
+            <div class="movieDetails">
+                <p><strong>Director: </strong> <span id="director"></span></p>
+            <p><strong>Action: </strong> <span id="action"> </span></p>
+            <p><strong>Language: </strong> <span id="language"> </span></p>
+            <p><strong>Year: </strong> <span id="year"> </span></p>
+            <p><strong>IMDB Ratings: </strong> <span id="rating"> </span></p>
+            <p><strong>Released: </strong> <span id="release"> </span></p>
+            <p><strong>Runtime: </strong> <span id="runtime"> </span></p>
+     
+            </div>
+        </div>
+        <div>
+            <img class="poster" id="poster" src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="">
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
