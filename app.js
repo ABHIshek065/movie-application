@@ -16,7 +16,7 @@ document.getElementById('release')
 document.getElementById('runtime')
 
 
-let API = "http://www.omdbapi.com/?apikey=61e576a4&t=";
+let API = 'https://www.omdbapi.com/?i=tt3896198&apikey=c997e31e&t=' ;
 
 let loadingStatus = false;
 
