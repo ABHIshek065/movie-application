@@ -39,6 +39,7 @@ input:focus {
   margin: 0 auto;
   color: white;
   text-align: center;
+  /* padding: 0 186px; */
 }
 
 .intro h1 {
@@ -111,4 +112,45 @@ input:focus {
 
 .movieDetails p{
   padding-left: 18px;
+}
+
+
+@media (max-width: 799px){
+  .intro {
+    width: auto;
+    padding: 0px 70px;
+  }
+  .movie-container{
+  width: 630px;
+    justify-content: center;
+    margin:40px auto;
+    flex-wrap: wrap;
+  }
+  .content {
+    width: auto;
+    padding:0 36px ;
+}
+.poster {
+  margin-top: 12px;
+}
+}
+@media (max-width: 586px){
+.intro {
+  padding: 0;
+}
+.movie-container{
+  width: 330px;
+    justify-content: center;
+    margin:40px auto;
+    flex-wrap: wrap;
+  }
+  .content {
+    width: auto;
+    padding:0  ;
+}
+.poster {
+  width: 250px;
+  margin-top: 12px;
+}
+
 }
