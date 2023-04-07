@@ -16,7 +16,7 @@ document.getElementById('release')
 document.getElementById('runtime')
 
 
-let API = "http://www.omdbapi.com/?apikey=61e576a4&t=";
+let API = "https://www.omdbapi.com/?apikey=61e576a4&t=";
 
 let loadingStatus = false;
 
@@ -45,7 +45,6 @@ function renderMovie(data){
   rating.innerText = data.imdbRating
   release.innerText = data.Released
   runtime.innerText = data.Runtime
-
 }
 
 function fetchMovieDetails() {
@@ -53,16 +52,19 @@ function fetchMovieDetails() {
 
   checkLoaderStatus();
   let apiQuery = API + movieName.value;
-  console.log(apiQuery);
+  // console.log(apiQuery);
   fetch(apiQuery)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       loadingStatus = false;
       checkLoaderStatus();
       renderMovie(data)
       movieContainer.classList.remove ('none')
     });
 }
+
+
+
